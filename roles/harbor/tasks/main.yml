@@ -1,5 +1,5 @@
 ---
-- name: HARBOR | Manage Redhat environment
+- name: HARBOR | Manage Ubuntu environment
   include_tasks: install.yml
   when: ansible_os_family == "Ubuntu"
 
