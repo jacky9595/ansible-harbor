@@ -62,3 +62,9 @@
       url : https://github.com/docker/compose/releases/download/{{ version }}-rc1/docker-compose-Linux-x86_64
       dest: /usr/local/bin/docker-compose
       mode: 'u+x,g+x'
+
+- name: link docker-compose
+  file:
+    src: /usr/local/bin/docker-compose
+    dest: /usr/bin/docker-compose
+    state: link
