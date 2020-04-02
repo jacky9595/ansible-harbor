@@ -1,0 +1,10 @@
+---
+- name: Install Harbor
+  hosts: serverharbor
+  become: true
+
+  roles:
+    - role: docker
+    - role: harbor
+
+  
